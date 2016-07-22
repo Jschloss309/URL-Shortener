@@ -1,0 +1,8 @@
+<h1>Shorten My Link Breh:</h1>
+
+<%= form_tag site_create_path do %>
+  <%= label_tag(:id, "Type URL breh:") %>
+  <%= text_field_tag(:term) %>
+  <%= submit_tag("Create URL") %>
+<% end %>
+<%= link_to "http://localhost:3000/#{@newurl.id}", "/#{@newurl.id}"  %>
