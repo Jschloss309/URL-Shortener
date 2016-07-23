@@ -5,4 +5,4 @@
   <%= text_field_tag(:term) %>
   <%= submit_tag("Create URL") %>
 <% end %>
-<%= link_to "#{request.host_withport}/#{@newurl.id}", "/#{@newurl.id}"  %>
+<%= link_to "#{request.host_with_port}/#{@newurl.id}", "/#{@newurl.id}"  %>
